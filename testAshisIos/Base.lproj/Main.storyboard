@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -26,13 +25,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXV-D4-6ip">
-                                <rect key="frame" x="159" y="39" width="231" height="55"/>
+                                <rect key="frame" x="162" y="39" width="231" height="55"/>
                                 <state key="normal" title="Alamofire and ObjectMapper Test"/>
                                 <connections>
                                     <action selector="buttonOnClickListener:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4t-B4-erY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufu-nx-u29">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufu-nx-u29">
                                 <rect key="frame" x="34" y="301" width="157" height="30"/>
                                 <state key="normal" title="Add Firebase Observer"/>
                                 <connections>
@@ -44,7 +43,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRb-do-zp8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRb-do-zp8">
                                 <rect key="frame" x="7" y="52" width="100" height="30"/>
                                 <state key="normal" title="Login Firebase">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -66,7 +65,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzO-KT-oPu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzO-KT-oPu">
                                 <rect key="frame" x="104" y="353" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -75,22 +74,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QzO-KT-oPu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="Fm2-bQ-3Kc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oIT-g1-P4b" secondAttribute="trailing" constant="309" id="GhO-16-Yk0"/>
+                            <constraint firstItem="ZXV-D4-6ip" firstAttribute="leading" secondItem="gRb-do-zp8" secondAttribute="trailing" constant="55" id="Ret-Y1-NTz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NQJ-yC-o7T" secondAttribute="trailing" constant="45" id="Sa4-DQ-Al2"/>
                             <constraint firstItem="d1X-fC-tlU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="112" id="TkR-58-3Bw"/>
                             <constraint firstItem="ufu-nx-u29" firstAttribute="top" secondItem="d1X-fC-tlU" secondAttribute="bottom" constant="32" id="UZ9-UL-Cbo"/>
                             <constraint firstItem="NQJ-yC-o7T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="X91-nA-cbu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WfL-KT-2cp" secondAttribute="bottom" constant="112" id="Zks-iL-chs"/>
-                            <constraint firstItem="gRb-do-zp8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="b9g-A4-aoe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QzO-KT-oPu" secondAttribute="trailing" constant="309" id="bXI-1e-fQp"/>
+                            <constraint firstItem="gRb-do-zp8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="b9g-A4-aoe"/>
                             <constraint firstItem="d1X-fC-tlU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="219" id="cZo-X6-e6N"/>
                             <constraint firstItem="NQJ-yC-o7T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="dXQ-Yz-yxW"/>
                             <constraint firstItem="WfL-KT-2cp" firstAttribute="top" secondItem="oIT-g1-P4b" secondAttribute="bottom" constant="65" id="hG8-kh-Igf"/>
-                            <constraint firstItem="oIT-g1-P4b" firstAttribute="top" secondItem="QzO-KT-oPu" secondAttribute="bottom" constant="47" id="hhe-Fm-3GK"/>
+                            <constraint firstItem="oIT-g1-P4b" firstAttribute="top" secondItem="QzO-KT-oPu" secondAttribute="bottom" constant="7" id="hhe-Fm-3GK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WfL-KT-2cp" secondAttribute="trailing" constant="295" id="njr-Bs-282"/>
-                            <constraint firstItem="ufu-nx-u29" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="qVn-TC-ht0"/>
-                            <constraint firstItem="ZXV-D4-6ip" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" multiplier="1:3" constant="206.33333333333334" id="qrd-aH-xQP"/>
-                            <constraint firstItem="ZXV-D4-6ip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="rQD-wT-bXS"/>
+                            <constraint firstItem="ufu-nx-u29" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="qVn-TC-ht0"/>
+                            <constraint firstItem="ZXV-D4-6ip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="rQD-wT-bXS"/>
                             <constraint firstItem="gRb-do-zp8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="st4-hk-ZW2"/>
                         </constraints>
                     </view>
