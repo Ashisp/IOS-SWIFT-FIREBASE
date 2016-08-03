@@ -25,41 +25,80 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzO-KT-oPu">
-                                <rect key="frame" x="243" y="329" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXV-D4-6ip">
+                                <rect key="frame" x="159" y="39" width="231" height="55"/>
+                                <state key="normal" title="Alamofire and ObjectMapper Test"/>
+                                <connections>
+                                    <action selector="buttonOnClickListener:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4t-B4-erY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufu-nx-u29">
+                                <rect key="frame" x="34" y="301" width="157" height="30"/>
+                                <state key="normal" title="Add Firebase Observer"/>
+                                <connections>
+                                    <action selector="ButtonOnClickListener:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Km-iC-QZ9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQJ-yC-o7T">
+                                <rect key="frame" x="20" y="185" width="515" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRb-do-zp8">
+                                <rect key="frame" x="7" y="52" width="100" height="30"/>
+                                <state key="normal" title="Login Firebase">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoginFirebase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lV5-pd-p96"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-fC-tlU">
+                                <rect key="frame" x="132" y="239" width="54" height="30"/>
+                                <state key="normal" title="Setdata"/>
+                                <connections>
+                                    <action selector="SetDataToFirebase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJM-hH-U9u"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIT-g1-P4b">
                                 <rect key="frame" x="229" y="381" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXV-D4-6ip">
-                                <rect key="frame" x="251" y="39" width="46" height="137"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="buttonOnClickListener:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4t-B4-erY"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzO-KT-oPu">
+                                <rect key="frame" x="104" y="353" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="oIT-g1-P4b" secondAttribute="trailing" constant="309" id="GhO-16-Yk0"/>
-                            <constraint firstItem="QzO-KT-oPu" firstAttribute="top" secondItem="ZXV-D4-6ip" secondAttribute="bottom" constant="135" id="VPe-1P-txl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NQJ-yC-o7T" secondAttribute="trailing" constant="45" id="Sa4-DQ-Al2"/>
+                            <constraint firstItem="d1X-fC-tlU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="112" id="TkR-58-3Bw"/>
+                            <constraint firstItem="ufu-nx-u29" firstAttribute="top" secondItem="d1X-fC-tlU" secondAttribute="bottom" constant="32" id="UZ9-UL-Cbo"/>
+                            <constraint firstItem="NQJ-yC-o7T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="X91-nA-cbu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WfL-KT-2cp" secondAttribute="bottom" constant="112" id="Zks-iL-chs"/>
+                            <constraint firstItem="gRb-do-zp8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="b9g-A4-aoe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QzO-KT-oPu" secondAttribute="trailing" constant="309" id="bXI-1e-fQp"/>
+                            <constraint firstItem="d1X-fC-tlU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="219" id="cZo-X6-e6N"/>
+                            <constraint firstItem="NQJ-yC-o7T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="dXQ-Yz-yxW"/>
                             <constraint firstItem="WfL-KT-2cp" firstAttribute="top" secondItem="oIT-g1-P4b" secondAttribute="bottom" constant="65" id="hG8-kh-Igf"/>
                             <constraint firstItem="oIT-g1-P4b" firstAttribute="top" secondItem="QzO-KT-oPu" secondAttribute="bottom" constant="47" id="hhe-Fm-3GK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WfL-KT-2cp" secondAttribute="trailing" constant="295" id="njr-Bs-282"/>
+                            <constraint firstItem="ufu-nx-u29" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="qVn-TC-ht0"/>
                             <constraint firstItem="ZXV-D4-6ip" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" multiplier="1:3" constant="206.33333333333334" id="qrd-aH-xQP"/>
                             <constraint firstItem="ZXV-D4-6ip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="rQD-wT-bXS"/>
+                            <constraint firstItem="gRb-do-zp8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="st4-hk-ZW2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="LoginFirebase" destination="gRb-do-zp8" id="1Mh-Eq-wlA"/>
+                        <outlet property="ObserverStarter" destination="8bC-Xf-vdC" id="jkB-k4-63a"/>
                         <outlet property="buttonClick" destination="ZXV-D4-6ip" id="qPL-9P-lue"/>
+                        <outlet property="textFieldToset" destination="NQJ-yC-o7T" id="29D-cv-AK5"/>
                         <outlet property="textView" destination="WfL-KT-2cp" id="v0E-oj-VkP"/>
                         <outlet property="textView1" destination="QzO-KT-oPu" id="dRC-3j-fZU"/>
                         <outlet property="textView2" destination="oIT-g1-P4b" id="PYg-uy-M95"/>

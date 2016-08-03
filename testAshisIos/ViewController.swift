@@ -13,6 +13,9 @@ import FirebaseAuth
 import AlamofireObjectMapper
 class ViewController: UIViewController {
  
+    @IBOutlet weak var LoginFirebase: UIButton!
+    @IBOutlet weak var textFieldToset: UITextField!
+    @IBOutlet var ObserverStarter: UIView!
     @IBOutlet weak var textView2: UILabel!
     var ref: FIRDatabaseReference!
     @IBOutlet weak var textView1: UILabel!
@@ -27,19 +30,44 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func buttonOnClickListener(sender: UIButton) {
+    @IBAction func SetDataToFirebase(sender: UIButton) {
+        self.ref.child("message").setValue(textFieldToset.text)
+
+        
+    }
+    @IBAction func LoginFirebase(sender: UIButton) {
+        
+        
+        
+        //Firebase Authentication
         FIRAuth.auth()?.signInAnonymouslyWithCompletion() { (user, error) in
-           
+            
             //let isAnonymous = user!.anonymous  // true
             let uid = user!.uid
-             print("logged in"+uid)
-           self.ref.child("message").setValue("hi solti apil")
- 
-            self.ref.observeEventType(.ChildAdded, withBlock: { (snapshot) in
-              print(snapshot)
-            })
+            print("logged in"+uid)
             
-            }
+            
+        }
+        
+    }
+    @IBAction func ButtonOnClickListener(sender: UIButton) {
+        // onChild added Eventlister
+        self.ref.child("message").observeEventType(.Value, withBlock: { (snapshot) in
+ //           print(snapshot.value!["message"] as? String)
+                         self.textView1.text = snapshot.value as? String
+
+         
+           
+            
+                      //Snapshot gives all the data that are added on the eventlistener fired
+            
+        })
+        
+        
+    }
+    @IBAction func buttonOnClickListener(sender: UIButton) {
+        
+        
         
         let URL = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
         //using alamofireobjectmapper
